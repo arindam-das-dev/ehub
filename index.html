@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArindamMart - Fashion Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="image/online-shopping.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-header">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <a href="#" class="logo" data-page="home">
+                <i class="fas fa-shopping-bag"></i> 
+                <span class="logo-text">ArindamMart</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for brands, products, and more...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="header-icons">
+                <a href="#" id="user-icon">
+                    <i class="far fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" id="wishlist-icon">
+                    <i class="far fa-heart"></i>
+                    <span>Wishlist</span>
+                </a>
+                <a href="#" id="cart-icon" style="position: relative;">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Bag</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#" data-page="men">Men</a>
+            <a href="#" data-page="women">Women</a>
+            <a href="#" data-page="kids">Kids</a>
+            <a href="#" data-page="home-living">Home & Living</a>
+            <a href="#" data-page="beauty">Beauty</a>
+            <a href="#" data-page="studio">Studio</a>
+            <a href="#" data-page="offers">Offers</a>
+            <a href="#" data-page="new-arrivals">New Arrivals</a>
+        </nav>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#" data-page="men"><i class="fas fa-male"></i>Men</a>
+            <a href="#" data-page="women"><i class="fas fa-female"></i>Women</a>
+            <a href="#" data-page="kids"><i class="fas fa-child"></i>Kids</a>
+            <a href="#" data-page="home-living"><i class="fas fa-home"></i>Home & Living</a>
+            <a href="#" data-page="beauty"><i class="fas fa-palette"></i>Beauty</a>
+            <a href="#" data-page="studio"><i class="fas fa-camera"></i>Studio</a>
+            <a href="#" data-page="offers"><i class="fas fa-tag"></i>Offers</a>
+            <a href="#" data-page="new-arrivals"><i class="fas fa-star"></i>New Arrivals</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <h1>Fashion For Everyone</h1>
+                <p>Discover the latest trends in clothing, footwear and accessories at ArindamMart</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Shop Now</a>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories">
+                <h2 class="section-title">Shop By Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Men's Fashion">
+                        </div>
+                        <div class="category-info">
+                            <h3>Men</h3>
+                            <a href="#" class="btn" data-page="men">Explore</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1741847639057-b51a25d42892?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Women's Fashion">
+                        </div>
+                        <div class="category-info">
+                            <h3>Women</h3>
+                            <a href="#" class="btn" data-page="women">Explore</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1693242804074-20a78966f4e6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Kids Fashion">
+                        </div>
+                        <div class="category-info">
+                            <h3>Kids</h3>
+                            <a href="#" class="btn" data-page="kids">Explore</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="saree">
+                        </div>
+                        <div class="category-info">
+                            <h3>saree</h3>
+                            <a href="#" class="btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Accessories">
+                        </div>
+                        <div class="category-info">
+                            <h3>Accessories</h3>
+                            <a href="#" class="btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="products">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded via JavaScript -->
+                </div>
+            </div>
+
+            <!-- Special Offers -->
+            <div class="categories">
+                <h2 class="section-title">Special Offers</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2115&q=80"
+                                alt="Summer Sale">
+                        </div>
+                        <div class="category-info">
+                            <h3>Summer Sale</h3>
+                            <p>Upto 70% off</p>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                alt="New Arrivals">
+                        </div>
+                        <div class="category-info">
+                            <h3>New Arrivals</h3>
+                            <p>Fresh styles just landed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men Page -->
+        <section id="men" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Men</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');">
+                <h1>Men's Collection</h1>
+                <p>Discover the latest trends in men's fashion</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-title">Filter By:</div>
+                <div class="filter-options">
+                    <div class="filter-option active">All</div>
+                    <div class="filter-option">T-Shirts</div>
+                    <div class="filter-option">Shirts</div>
+                    <div class="filter-option">Jeans</div>
+                    <div class="filter-option">Footwear</div>
+                    <div class="filter-option">Accessories</div>
+                </div>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Men's Fashion</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Women Page -->
+        <section id="women" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Women</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');">
+                <h1>Women's Collection</h1>
+                <p>Discover the latest trends in women's fashion</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-title">Filter By:</div>
+                <div class="filter-options">
+                    <div class="filter-option active">All</div>
+                    <div class="filter-option">Dresses</div>
+                    <div class="filter-option">Tops</div>
+                    <div class="filter-option">Jeans</div>
+                    <div class="filter-option">Footwear</div>
+                    <div class="filter-option">Accessories</div>
+                </div>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Women's Fashion</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids Page -->
+        <section id="kids" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Kids</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');">
+                <h1>Kids Collection</h1>
+                <p>Stylish and comfortable clothing for kids</p>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Kids Fashion</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Home & Living Page -->
+        <section id="home-living" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Home & Living</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2158&q=80');">
+                <h1>Home & Living</h1>
+                <p>Transform your home with our collection</p>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Home & Living</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Page -->
+        <section id="beauty" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Beauty</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80');">
+                <h1>Beauty Products</h1>
+                <p>Discover our range of beauty products</p>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Beauty</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio Page -->
+        <section id="studio" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Studio</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <h1>Studio</h1>
+                <p>Exclusive collections from our studio</p>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Studio Collection</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Page -->
+        <section id="offers" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>Offers</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <h1>Special Offers</h1>
+                <p>Enjoy amazing discounts on our products</p>
+            </div>
+
+            <div class="coupon-section">
+                <h2>Apply Coupon</h2>
+                <div class="coupon-form">
+                    <input type="text" placeholder="Enter coupon code" id="coupon-code">
+                    <button class="btn" id="apply-coupon">Apply</button>
+                </div>
+                <div id="coupon-message" style="margin-top: 10px; font-weight: 600;"></div>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">Discounted Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Page -->
+        <section id="new-arrivals" class="page-section">
+            <div class="breadcrumb">
+                <a href="#" data-page="home">Home</a> > <span>New Arrivals</span>
+            </div>
+
+            <div class="hero"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <h1>New Arrivals</h1>
+                <p>Check out our latest products</p>
+            </div>
+
+            <div class="products">
+                <h2 class="section-title">New Arrivals</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- User Dashboard -->
+        <div class="user-dashboard" id="user-dashboard">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h3 id="user-name">Guest User</h3>
+                    <p id="user-email">guest@example.com</p>
+                </div>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="btn" id="my-orders-btn">My Orders</a>
+                <a href="#" class="btn" id="my-wishlist-btn">My Wishlist</a>
+                <a href="#" class="btn" id="logout-btn">Logout</a>
+            </div>
+        </div>
+
+        <!-- My Orders Page -->
+        <div class="order-list" id="order-list">
+            <h2 class="section-title">My Orders</h2>
+            <div id="orders-container">
+                <!-- Orders will be loaded here via JavaScript -->
+                <p class="no-orders">You haven't placed any orders yet.</p>
+            </div>
+        </div>
+
+        <!-- My Wishlist Page -->
+        <div class="wishlist-page" id="wishlist-page">
+            <h2 class="section-title">My Wishlist</h2>
+            <div id="wishlist-container">
+                <!-- Wishlist items will be loaded here via JavaScript -->
+                <p class="no-wishlist">Your wishlist is empty.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-tabs">
+                <div class="modal-tab active" data-tab="login">Login</div>
+                <div class="modal-tab" data-tab="register">Register</div>
+            </div>
+            <form class="modal-form active" id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <form class="modal-form" id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <span id="notification-text"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#" data-page="men">Men</a></li>
+                    <li><a href="#" data-page="women">Women</a></li>
+                    <li><a href="#" data-page="kids">Kids</a></li>
+                    <li><a href="#" data-page="home-living">Home & Living</a></li>
+                    <li><a href="#" data-page="new-arrivals">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <p>Subscribe to our newsletter for updates</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Your email address">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ArindamMart All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
